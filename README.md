@@ -49,7 +49,7 @@ The Partner Onboarding Reference FAP can be deployed quickly using the prebuilt 
 Start the container with:
 
 ```bash
-docker run -d --name orce -p 1880:1880 -p 8080:8080 ecofacis/fap-partner-onboarding:latest
+docker run -d -p 1880:1880 -p 8080:8080 ecofacis/fap-partner-onboarding:latest
 ```
 
 ### Default Login
