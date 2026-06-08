@@ -42,7 +42,29 @@ A quick and reliable setup guide to deploy and run the Reference FAP flow on ORC
 
 ---
 
-## Step 0 — Easy Deployment (Single Command)
+## Easy Deployment
+
+The Partner Onboarding Reference FAP can be deployed quickly using the prebuilt Docker image. The image includes the required ORCE flows and UI data, so no additional setup is required for a local test instance.
+
+Start the container with:
+
+```bash
+docker run -d --name orce -p 1880:1880 -p 8080:8080 ecofacis/fap-partner-onboarding:latest
+```
+
+### Default Login
+
+```text
+Username: admin
+Password: xfsc-orce
+```
+
+Once the container is running, you can access the services at:
+
+- ORCE: `http://localhost:1880`
+- File Browser: `http://localhost:8080`
+
+## Step 0 — Deployment
 
 Before importing or configuring the Reference FAP, you first need to start an ORCE instance.  
 The following command runs ORCE using the official `ecofacis/xfsc-orce:2.0.12` image:
